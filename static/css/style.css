@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.phone-navbar, .phone-navbar1 {
+    display: none;
+}
+
+.phone-navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+  
+.navbar a:hover {
+    left: 0;
+}
+
+#nav-home {
+    top: 1em;
+    background-color: #4CAF50;
+}
+  
+#nav-projects {
+    top: 7em;
+    background-color: #f44336;
+}
+  
+#nav-about {
+    top: 4em;
+    background-color: #04AA6D;
+}
+  
+#nav-contact {
+    top: 10em;
+    background-color: #555
+}
+
+.title, .subtitle, .socials {
+    text-align: center;
+}
+
+.socialsIcon {
+    max-width: 2em;
+}
+
+.imgBackground1 {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20em;
+    color: white;
+}
+
+.aboutText {
+    text-align: center;
+    padding: 1em;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 20em;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project:hover {
+    box-shadow: 0 0 10px #e6e6e6;
+}
+
+.projectTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.projectDescription {
+    font-size: 1em;
+    color: #555;
+}
+
+.projectLink {
+    font-size: 1em;
+    color: #555;
+}
+
+.projectLink:hover {
+    color: #04AA6D;
+}
+
+span:hover {
+    color: #04AA6D;
+    /* make the text a bit bigger */
+    font-size: 1.2em;
+}
+
+.mostUsed {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .phone-navbar {
+        display: block;
+    }
+    .phone-navbar1 {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+}

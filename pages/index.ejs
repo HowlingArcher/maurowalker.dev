@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="icon" href="<%= iconLoc %>" type="image/x-icon">
+
+        <meta property="og:title" content="Mauro's Personal Website" />
+        <meta property="og:description" content="<%= desc %>" />
+        <meta property="og:image" content="<%= iconLoc %>" />
+        <meta property="og:url" content="<%= url %>" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Mauro's Personal Website" />
+
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar sticky">
+            <a id="nav-home" href="/">Home</a>
+            <a id="nav-about" href="#about">About</a>
+            <a id="nav-projects" href="#projects">Projects</a>
+            <a id="nav-contact" href="#contact">Contact</a>
+        </nav>
+        <button id="button1" onClick="show()" class="phone-navbar sticky">Show menu</button>
+        <nav class="phone-navbar1 sticky">
+            <a id="nav-home" href="/">Home</a>
+            <a id="nav-about" href="#about">About</a>
+            <a id="nav-projects" href="#projects">Projects</a>
+            <a id="nav-contact" href="#contact">Contact</a>
+        </nav>
+        <div class="container imgBackground1">
+            <div class="title" style="padding-top: 2em;">
+                <h1>Heya, I'm <span>M</span><span>a</span><span>u</span><span>r</span><span>o</span></h1>
+            </div>
+            
+            <div class="subtitle">
+                <h2>Hi, I'm <span>M</span><span>a</span><span>u</span><span>r</span><span>o</span>. I'm a self-thought developer who writes code in <span>J</span><span>a</span><span>v</span><span>a</span><span>S</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span></h2>
+            </div>
+            <div class="socials">
+                <a href="https://github.com/commander-r"><img src="/images/socials/github.png" alt="GitHub" class="socialsIcon"></a>
+                <a href="https://www.linkedin.com/in/mauro-walker-5682a2242/"><img src="/images/socials/linkedin.png" alt="LinkedIn" class="socialsIcon"></a>
+                <a href="https://www.instagram.com/commander_r_9371/"><img src="/images/socials/instagram.png" alt="Instagram" class="socialsIcon"></a>
+                <a href="https://discord.com/users/271285474516140033"><img src="/images/socials/discord.png" alt="Discord" class="socialsIcon"></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="title" id="about">
+                <h2>About</h2>
+            </div>
+            <div class="subtitle">
+                <h2>Hi, I'm Mauro. I'm a software developer.</h2>
+            </div>
+            <div class="aboutText">
+                <p>
+                    <h2>test</h2>
+                </p>
+            </div>
+            <div class="mostUsed">
+                <h2>Most used languages & tools</h2><br>
+                <iframe src="https://github-readme-stats.vercel.app/api/top-langs?username=commander-r&show_icons=true&locale=en&layout=compact&theme=tokyonight" frameborder="0"></iframe>
+                <iframe src="https://github-readme-stats.vercel.app/api?username=commander-r&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true" frameborder="0"></iframe>
+                <br>
+                <img src="images/icons/bash.svg" alt="bash">
+                <img src="images/icons/bootstrap.svg" alt="Bootstrap">
+                <img src="images/icons/css.svg" alt="CSS">
+                <img src="images/icons/html.svg" alt="HTML">
+                <img src="images/icons/javascript.svg" alt="JavaScript">
+                <img src="images/icons/nodejs.svg" alt="NodeJS">
+                <img src="images/icons/npm.png" alt="npm" style="height:2.5em">
+                <img src="images/icons/vscode.svg" alt="Visual Studio code">
+                <img src="images/icons/devicon.svg" alt="Devicon">
+                <img src="images/icons/windows.svg" alt="Windows">
+                <img src="images/icons/express.svg" alt="express">
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="title" id="projects">
+                <h2>Projects</h2>
+            </div>
+            <div class="subtitle">
+                <h2>Here are some of my projects.</h2>
+            </div>
+            <div class="projects">
+
+                <div class="project">
+                    <div class="projectImage">
+                        <img src="/images/projects/mauro.jpg" alt="Mauro's Personal Website" style="height:10em; border-radius: 100%;">
+                    </div>
+                    <div class="projectText">
+                        <h2>Mauro's Personal Website</h2>
+                        <p>This website is made with Node.js, Express, and EJS.</p>
+                        <a class="projectLink" href="https://github.com/commander-r/maurowalker.dev/">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="projectImage">
+                        <img src="https://www.lost-pack.xyz/images/favicon.png" alt="The Lost Pack Development">
+                    </div>
+                    <div class="projectText">
+                        <h2>The Lost Pack Development</h2>
+                        <p>This website is made with Node.js, Express and EJS.<br>This website is made for people who don't know how to make discord bots & websites so they can hire us to make one for them.</p>
+                        <a class="projectLink" href="https://github.com/The-Lost-Pack-Development">View on GitHub</a>
+                        <a class="projectLink" href="https://www.lost-pack.xyz">View the website</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="projectImage">
+                        <img src="http://51.75.68.61:64199/img/icon.png" alt="Stock Management System" style="height:10em; border-radius: 100%;">
+                    </div>
+                    <div class="projectText">
+                        <h2>Stock Management System</h2>
+                        <p>This website is made with Node.js, Express and EJS.<br>This website is made as a school project.</p>
+                        <a class="projectLink" href="https://github.com/commander-r/stock-management-system">View on GitHub</a>
+                        <a class="projectLink" href="http://school-project.lost-pack.xyz">View the website</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </body>
+</html>

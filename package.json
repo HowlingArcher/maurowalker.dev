@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "name": "maurowalker.dev",
+  "description": "My personal website",
+  "version": "0.0.1",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commander-r/maurowalker.dev.git"
+  },
+  "author": "commander-r",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/commander-r/maurowalker.dev/issues"
+  },
+  "homepage": "https://github.com/commander-r/maurowalker.dev#readme"
+}
