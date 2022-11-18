@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
         <meta property="og:title" content="Mauro's Personal Website" />
         <meta property="og:description" content="<%= desc %>" />
@@ -20,6 +21,7 @@
 
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+
         <script src="/js/script.js"></script>
     </head>
     <body>
@@ -36,62 +38,92 @@
             <a id="nav-projects" href="#projects">Projects</a>
             <a id="nav-contact" href="#contact">Contact</a>
         </nav>
+
         <div class="container imgBackground1">
             <div class="title" style="padding-top: 2em;">
                 <h1 id="title">Heya, I'm Mauro</h1>
             </div>
-            
             <div class="subtitle">
-                <h2>Hi, I'm Mauro. I'm a self-thought developer who writes code in mainly JavaScript</h2>
+                <h2>I'm Mauro, also known as "<code>Commander R</code>" online, I am a self-thought developer.</h2>
             </div>
             <div class="socials">
-                <a href="https://github.com/commander-r"><img src="/images/socials/github.png" alt="GitHub" class="socialsIcon"></a>
-                <a href="https://www.linkedin.com/in/mauro-walker-5682a2242/"><img src="/images/socials/linkedin.png" alt="LinkedIn" class="socialsIcon"></a>
-                <a href="https://www.instagram.com/commander_r_9371/"><img src="/images/socials/instagram.png" alt="Instagram" class="socialsIcon"></a>
-                <a href="https://discord.com/users/271285474516140033"><img src="/images/socials/discord.png" alt="Discord" class="socialsIcon"></a>
+                <a href="https://www.linkedin.com/in/mauro-walker-5682a2242/" target="_blank"><img src="/images/socials/linkedin.png" alt="LinkedIn" class="socialsIcon"></a>
+                <a href="https://github.com/commander-r" target="_blank"><img src="/images/socials/github.png" alt="GitHub" class="socialsIcon"></a>
+                <a href="https://discord.com/users/271285474516140033" target="_blank"><img src="/images/socials/discord.png" alt="Discord" class="socialsIcon"></a>
+                <a href="https://www.instagram.com/commander_r_9371/" target="_blank"><img src="/images/socials/instagram.png" alt="Instagram" class="socialsIcon"></a>
             </div>
         </div>
 
         <div class="gradiant1" style="min-height: 100vh;">
-            <div class="container" style="border-bottom: .5em solid black">
+            <div class="container" style="border-bottom: .5em solid black; padding-top: 1.25em; border-top: .5em solid black;">
                 <div class="title" id="about">
-                    <h2 style="color:#04AA6D">About me</h2>
-                </div>
-                <div class="subtitle">
-                    <h2>Hi, I'm Mauro. I'm a software developer.</h2>
+                    <h2 id="title">About me</h2>
                 </div>
                 <div class="aboutText">
                     <p>
-                        <h2>test</h2>
+                        <h2>I am Mauro. On most online platforms I go by the name "<code>Commander R</code>"</h2>
                     </p>
                 </div>
                 <div class="mostUsed" style="padding-bottom:1.5em;">
-                    <h2>Most used languages & tools</h2><br>
-                    <iframe src="https://github-readme-stats.vercel.app/api/top-langs?username=commander-r&show_icons=true&locale=en&layout=compact&theme=tokyonight" frameborder="0"></iframe>
-                    <iframe src="https://github-readme-stats.vercel.app/api?username=commander-r&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true" frameborder="0"></iframe>
-                    <br>
-                    <img src="images/icons/bash.svg" alt="bash">
-                    <img src="images/icons/bootstrap.svg" alt="Bootstrap">
-                    <img src="images/icons/css.svg" alt="CSS">
-                    <img src="images/icons/html.svg" alt="HTML">
-                    <img src="images/icons/javascript.svg" alt="JavaScript">
-                    <img src="images/icons/nodejs.svg" alt="NodeJS">
-                    <img src="images/icons/npm.png" alt="npm" style="height:2.5em">
-                    <img src="images/icons/vscode.svg" alt="Visual Studio code">
-                    <img src="images/icons/devicon.svg" alt="Devicon">
-                    <img src="images/icons/windows.svg" alt="Windows">
-                    <img src="images/icons/express.svg" alt="express">
+                    <h2>My most used languages & tools</h2><br>
+                    <div class="tooltipbash">
+                        <img src="images/icons/bash.svg" alt="bash">
+                        <span class="tooltipbashtext">Bash</span>
+                    </div>
+                    <div class="tooltipboot">
+                        <img src="images/icons/bootstrap.svg" alt="Bootstrap">
+                        <span class="tooltipboottext">Bootstrap</span>
+                    </div>
+                    <div class="tooltipcss">
+                        <img src="images/icons/css.svg" alt="CSS">
+                        <span class="tooltipcsstext">CSS</span>
+                    </div>
+                    <div class="tooltiphtml">
+                        <img src="images/icons/html.svg" alt="HTML">
+                        <span class="tooltiphtmltext">HTML</span>
+                    </div>
+                    <div class="tooltipjs">
+                        <img src="images/icons/javascript.svg" alt="JavaScript">
+                        <span class="tooltipjstext">JavaScript</span>
+                    </div>
+                    <div class="tooltipnode">
+                        <img src="images/icons/nodejs.svg" alt="NodeJS">
+                        <span class="tooltipnodetext">Node.js</span>
+                    </div>
+                    <div class="tooltipnpm">
+                        <img src="images/icons/npm.png" alt="npm" style="height:2.5em">
+                        <span class="tooltipnpmtext">NPM</span>
+                    </div>
+                    <div class="tooltipvscode">
+                        <img src="images/icons/vscode.svg" alt="Visual Studio code">
+                        <span class="tooltipvscodetext">Visual Studio Code</span>
+                    </div>
+                    <div class="tooltipdevicon">
+                        <img src="images/icons/devicon.svg" alt="Devicon">
+                        <span class="tooltipdevicontext">Devicon</span>
+                    </div>
+                    <div class="tooltipwindows">
+                        <img src="images/icons/windows.svg" alt="Windows">
+                        <span class="tooltipwindowstext">Windows</span>
+                    </div>
+                    <div class="tooltipgithub">
+                        <img src="images/socials/github.png" alt="GitHub" style="height:2.5em">
+                        <span class="tooltipgithubtext">Github</span>
+                    </div>
+                    <div class="tooltipexpress">
+                        <img src="images/icons/express.svg" alt="express" style="border-radius: 100%; border: 1px solid black;">
+                        <span class="tooltipexpresstext">Express.js</span>
+                    </div>
                 </div>
             </div>
+
             <div class="container" style="border-bottom: .5em solid black;">
                 <div class="title" id="projects" style="padding-top: 1.25em;">
-                    <h2>Projects</h2>
+                    <h2 id="title">Projects</h2>
                 </div>
                 <div class="subtitle">
                     <h2>Here are some of my projects.</h2>
-                </div>
                 <div class="projects" style="padding-bottom: 1.5em;">
-    
                     <div class="project" style="padding-bottom: 1.5em;">
                         <div class="projectImage">
                             <img src="/images/projects/mauro.jpg" alt="Mauro's Personal Website" style="height:10em; border-radius: 100%;">
@@ -99,10 +131,20 @@
                         <div class="projectText">
                             <h2>Mauro's Personal Website</h2>
                             <p>This website is made with Node.js, Express, and EJS.</p>
-                            <a class="projectLink" href="https://github.com/commander-r/maurowalker.dev/">View on GitHub</a>
+                            <a class="projectLink" href="https://github.com/commander-r/maurowalker.dev/" target="_blank">View on GitHub</a>
                         </div>
                     </div>
-    
+                    <div class="project">
+                        <div class="projectImage">
+                            <img src="/images/projects/stock_management_system_logo.png" alt="Stock Management System" style="height:10em; border-radius: 100%;">
+                        </div>
+                        <div class="projectText">
+                            <h2>Stock Management System</h2>
+                            <p>This website is made with Node.js, Express and EJS.<br>This website is made as a school project.</p>
+                            <a class="projectLink" href="https://github.com/commander-r/stock-management-system" target="_blank">View on GitHub</a>
+                            <a class="projectLink" href="http://school-project.lost-pack.xyz" target="_blank">View the website</a>
+                        </div>
+                    </div>
                     <div class="project">
                         <div class="projectImage">
                             <img src="https://www.lost-pack.xyz/images/favicon.png" alt="The Lost Pack Development">
@@ -110,41 +152,25 @@
                         <div class="projectText">
                             <h2>The Lost Pack Development</h2>
                             <p>This website is made with Node.js, Express and EJS.<br>This website is made for people who don't know how to make discord bots & websites so they can hire us to make one for them.</p>
-                            <a class="projectLink" href="https://github.com/The-Lost-Pack-Development">View on GitHub</a>
-                            <a class="projectLink" href="https://www.lost-pack.xyz">View the website</a>
+                            <a class="projectLink" href="https://github.com/The-Lost-Pack-Development" target="_blank">View on GitHub</a>
+                            <a class="projectLink" href="https://www.lost-pack.xyz" target="_blank">View the website</a>
                         </div>
                     </div>
-    
-                    <div class="project">
-                        <div class="projectImage">
-                            <img src="http://51.75.68.61:64199/img/icon.png" alt="Stock Management System" style="height:10em; border-radius: 100%;">
-                        </div>
-                        <div class="projectText">
-                            <h2>Stock Management System</h2>
-                            <p>This website is made with Node.js, Express and EJS.<br>This website is made as a school project.</p>
-                            <a class="projectLink" href="https://github.com/commander-r/stock-management-system">View on GitHub</a>
-                            <a class="projectLink" href="http://school-project.lost-pack.xyz">View the website</a>
-                        </div>
-                    </div>
-    
                 </div>
             </div>
+            
             <div class="container" style="align-items: center; text-align: center;">
-                <!-- make a contact form that lets people send emails to my email adress -->
-                <div class="title" id="contact">
-                    <h2>Contact me</h2>
+                <div class="title" id="contact" style="padding-top: 1.25em;">
+                    <h2 id="title">Contact me</h2>
                 </div>
-
                 <div class="next2eachoters">
                     <div class="div1">
-                        <a href="https://github.com/commander-r" class="Knoppie"><img src="/images/socials/github.png" alt="GitHub" class="socialsIcon"> Github</a><br>
-                        <a href="https://www.linkedin.com/in/mauro-walker-5682a2242/" class="Knoppie"><img src="/images/socials/linkedin.png" alt="LinkedIn" class="socialsIcon contact"> Linkedin</a><br>
-                        <a href="https://www.instagram.com/commander_r_9371/" class="Knoppie"><img src="/images/socials/instagram.png" alt="Instagram" class="socialsIcon contact"> Instagram</a><br>
-                        <a href="https://discord.com/users/271285474516140033" class="Knoppie"><img src="/images/socials/discord.png" alt="Discord" class="socialsIcon contact"> Discord</a><br><br>
+                        <a href="https://www.linkedin.com/in/mauro-walker-5682a2242/" class="Knoppie" target="_blank"><img src="/images/socials/linkedin.png" alt="LinkedIn" class="socialsIcon contact"> Linkedin</a><br>
+                        <a href="https://github.com/commander-r" class="Knoppie" target="_blank"><img src="/images/socials/github.png" alt="GitHub" class="socialsIcon"> Github</a><br>
+                        <a href="https://discord.com/users/271285474516140033" class="Knoppie" target="_blank"><img src="/images/socials/discord.png" alt="Discord" class="socialsIcon contact"> Discord</a><br>
+                        <a href="https://www.instagram.com/commander_r_9371/" class="Knoppie" target="_blank"><img src="/images/socials/instagram.png" alt="Instagram" class="socialsIcon contact"> Instagram</a><br><br>
                     </div>
-
                     <div class="vl"></div>
-
                     <form action="https://send.pageclip.co/VeE71iSKx9CIaJhTEyUKhN3LdyE5kZnm" class="pageclip-form div2" method="post" style="padding-bottom: 1em;">
                         <label for="name">Your name</label><br>
                         <input type="text" name="name" required /><br><br>
@@ -152,8 +178,6 @@
                         <input type="email" name="email" required /><br><br>
                         <label for="message">Your message</label><br>
                         <textarea type="textarea" name="message" required></textarea><br><br>
-                      
-                        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
                         <button type="submit" class="pageclip-form__submit">
                             <span>Send</span>
                         </button>

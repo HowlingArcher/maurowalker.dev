@@ -3,6 +3,9 @@ body {
     margin: 0;
     font-family: 'Dosis', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .phone-navbar, .phone-navbar1 {
     display: none;
@@ -58,6 +61,10 @@ body {
     text-align: center;
 }
 
+#title {
+    font-family: 'Audiowide', cursive;
+}
+
 .socialsIcon {
     max-width: 2em;
 }
@@ -77,6 +84,8 @@ body {
 .aboutText {
     text-align: center;
     padding: 1em;
+    max-width: 80%;
+    margin: auto;
 }
 
 .sticky {
@@ -96,7 +105,7 @@ body {
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project:hover {
@@ -116,7 +125,6 @@ body {
 .projectLink {
     font-size: 1em;
     color: rgb(255, 255, 255);
-
 }
 
 .projectLink:hover {
@@ -165,14 +173,278 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     width: 8em;
+    border-radius: 1em;
+    text-align: left;
 }
 
 .Knoppie:hover {
     box-shadow: 0 0 10px black;
+}.tooltipbash {
+    display: inline-block;
+}
+
+.tooltipbash .tooltipbashtext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipbash:hover .tooltipbashtext {
+    visibility: visible;
+}
+
+.tooltipboot {
+    display: inline-block;
+}
+
+.tooltipboot .tooltipboottext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipboot:hover .tooltipboottext {
+    visibility: visible;
+}
+
+.tooltipcss {
+    display: inline-block;
+}
+
+.tooltipcss .tooltipcsstext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipcss:hover .tooltipcsstext {
+    visibility: visible;
+}
+
+.tooltiphtml {
+    display: inline-block;
+}
+
+.tooltiphtml .tooltiphtmltext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltiphtml:hover .tooltiphtmltext {
+    visibility: visible;
+}
+
+.tooltipjs {
+    display: inline-block;
+}
+
+.tooltipjs .tooltipjstext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipjs:hover .tooltipjstext {
+    visibility: visible;
+}
+
+.tooltipnode {
+    display: inline-block;
+}
+
+.tooltipnode .tooltipnodetext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipnode:hover .tooltipnodetext {
+    visibility: visible;
+}
+
+.tooltipnpm {
+    display: inline-block;
+}
+
+.tooltipnpm .tooltipnpmtext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipnpm:hover .tooltipnpmtext {
+    visibility: visible;
+}
+
+.tooltipvscode {
+    display: inline-block;
+}
+
+.tooltipvscode .tooltipvscodetext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipvscode:hover .tooltipvscodetext {
+    visibility: visible;
+}
+
+.tooltipdevicon {
+    display: inline-block;
+}
+
+.tooltipdevicon .tooltipdevicontext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipdevicon:hover .tooltipdevicontext {
+    visibility: visible;
+}
+
+.tooltipwindows {
+    display: inline-block;
+}
+
+.tooltipwindows .tooltipwindowstext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipwindows:hover .tooltipwindowstext {
+    visibility: visible;
+}
+
+.tooltipgithub {
+    display: inline-block;
+}
+
+.tooltipgithub .tooltipgithubtext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipgithub:hover .tooltipgithubtext {
+    visibility: visible;
+}
+
+.tooltipexpress {
+    display: inline-block;
+}
+
+.tooltipexpress .tooltipexpresstext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipexpress:hover .tooltipexpresstext {
+    visibility: visible;
 }
 
 .gradiant1 {
-    background: linear-gradient(-45deg, rgb(255, 57, 57), #33f657, #a3008d, rgb(0, 169, 163));
+    background: linear-gradient(-45deg, rgb(255, 57, 57), #2f9b43, #5a00a3, rgb(182, 168, 41));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     margin-top: -1.25em;
@@ -192,6 +464,9 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+    .vl {
+        display: none;
+    }
     .phone-navbar {
         display: block;
     }
