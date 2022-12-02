@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
     res.status(200).render(__dirname + '/pages' + '/index.ejs', {
         title: 'Home', 
-        iconLoc: '/images/mainIcon.png', 
+        iconLoc: '/images/mainIcon.png',
         desc: "The personal website of a 18 year old developer.", 
         url: 'https://maurowalker.dev/'
     });
