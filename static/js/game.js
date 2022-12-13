@@ -17,7 +17,7 @@ var myGameArea = {
         document.getElementById("game").insertBefore(this.canvas, document.getElementById("game").childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 30);
-    },
+        },
     clear : function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     },
@@ -216,6 +216,7 @@ function playAgain() {
         score = 0;
         myObstacles = [];
         myGameArea.frameNo = 0;
+        showTop3Players();
         myGameArea.start();
     }
     else {
@@ -234,6 +235,6 @@ function startGame2() {
     score = 0;
     myObstacles = [];
     myGameArea.frameNo = 0;
-    myGameArea.start();
+    myGamePiece = new component(30, 30, "yellow", 10, 120);
     myGameArea.start();
 }
