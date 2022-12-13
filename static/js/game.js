@@ -202,6 +202,7 @@ function saveScore() {
         var scoreData = {
             "username": username,
             "score": score,
+            "level": level
         };
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "/scores", true);
