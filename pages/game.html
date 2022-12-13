@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webgame | HTML JS</title>
+    <title></title>
     <link rel="stylesheet" href="css/game.css">
     <link rel="icon" href="images/mainIcon.png" type="image/x-icon">
 
@@ -16,8 +17,9 @@
 
     <style>
         canvas {
-            background-color: rgba(121, 32, 204, 0.74);
-            border: 2px solid rgba(88, 15, 138, 0.863);
+            background-color: rgba(0, 0, 0, 0.74);
+            border: 2px solid rgba(121, 5, 199, 0.863);
+            box-shadow: 0 0 10px rgba(121, 5, 199, 0.863);
             border-radius: 10px;
         }
     </style>
@@ -41,19 +43,39 @@
         <tr>
             <th>Player</th>
             <th>Score</th>
+            <th>level</th>
         </tr>
     </table>
 
-    <button onclick="startGame2()" id="playagain" style="display: none">play again</button>
-    
-    <div id="game">
-        <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button>
-        <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+    <button onclick="restartGame()" id="playagain" style="display: none;">Play again</button>
+
+    <div id="pauseMenu" style="display: none">
+        <h1>Paused</h1>
+        <button onclick="restartGame()">Restart</button>
+        <button onclick="quitGame()">Quit</button>
+        <button onclick="controls()">controls</button>
+        <br>
+        <div id="level">
+            <p>Level: <span class="levelValue">1</span></p>
+        </div>
         <div id="lives">
-            <p>Lives: <span id="livesValue">3</span></p>
+            <p>Lives: <span class="livesValue">3</span></p>
         </div>
         <div id="score">
-            <p>Score: <span id="scoreValue">0</span></p>
+            <p>Score: <span class="scoreValue">0</span></p>
+        </div>
+    </div>
+    
+    <div id="game">
+        <button onclick="controls()">controls</button>
+        <div id="level">
+            <p>Level: <span class="levelValue">1</span></p>
+        </div>
+        <div id="lives">
+            <p>Lives: <span class="livesValue">3</span></p>
+        </div>
+        <div id="score">
+            <p>Score: <span class="scoreValue">0</span></p>
         </div>
     </div>
 </body>

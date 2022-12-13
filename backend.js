@@ -36,7 +36,7 @@ app.post("/scores", (req, res) => {
             
             const username = FetchedData.username;
             const score = FetchedData.score;
-            const lives = FetchedData.lives;
+            const level = FetchedData.level;
 
             if(username === "" || username === null) return;
 
@@ -48,7 +48,7 @@ app.post("/scores", (req, res) => {
             }
 
             // add the new scores to the dataRecord
-            dataRecord.data.push({ "username": username, "score": score });
+            dataRecord.data.push({ "username": username, "score": score, "level": level });
 
             // add the new score to the scores.json file
             let newData = JSON.stringify(dataRecord);
