@@ -134,6 +134,7 @@ function updateGameArea() {
             }
             myObstacles.splice(i, 1);
             drawLives();
+            showTop3Players();
             return;
         } 
     }
