@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get("/game", (req, res) => {
+app.get("/flappy-block", (req, res) => {
     res.sendFile(__dirname + '/pages/game.html');
 });
 
