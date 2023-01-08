@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get("/dmca-validation.html", (req, res) => {
+    res.sendFile(__dirname + '/pages/dmca-validation.html');
+})
+
 app.get("/flappy-block", (req, res) => {
     res.sendFile(__dirname + '/pages/game.html');
 });
